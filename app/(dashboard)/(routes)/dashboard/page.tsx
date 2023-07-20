@@ -48,8 +48,8 @@ const DashboardPage = () => {
   return (
     <div>
       <div className="mb-8 space-y-4">
-      <h2 className="text-2xl md:text-4xl font-bold">
-        Spooky AI Toolbox
+      <h2 className="text-2xl text-center md:text-4xl font-bold">
+        AI Toolbox
       </h2>
       <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
         Most useful AI models bundled in one toolbox 
