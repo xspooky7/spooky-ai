@@ -3,13 +3,15 @@ import Image from "next/image"
 export const Loader = () => {
     return (
         <div className="h-full flex flex-col gap-y-4 items-center justify-center">
-            <div className="w-10 h-10 relative animate-bounce">
+
             <Image 
-            alt="logo"
-            fill
+            className="relative animate-wander"
+            width={40}
+            height={40}
+            alt="S"
             src="/logo.png"
             />
-            </div>
+
             <p className="text-sm text-muted-foreground">
                 Spooky-Bot is thinking...
             </p>

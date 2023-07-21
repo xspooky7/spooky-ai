@@ -65,10 +65,47 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        wander: {
+            '0%, 100%': {
+              transform: 'translate(0%, 0%)',
+              animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+            },
+            '10%': {
+              transform: 'translate(-15%, -15%)',
+              animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)"
+              
+            },
+            '20%, 29%': {
+              transform: 'translate(-30%, 0%)',
+              animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+            },
+            '40%': {
+              transform: 'translate(-15%, -15%) rotateY(180deg)',
+              animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)"
+            },
+            '50%': {
+              transform: 'translate(0%, 0%) rotateY(180deg)',
+              animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+            },
+            '60%': {
+              transform: 'translate(15%, -15%) rotateY(180deg)',
+              animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)"
+            },
+            '70%, 79%': {
+              transform: 'translate(30%, 0%) rotateY(180deg)',
+              animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+            },
+            '90%': {
+              transform: 'translate(15%, -15%)',
+              animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)"
+            },
+        }
+
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "wander": "wander 3s infinite"
       },
     },
   },
