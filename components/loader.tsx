@@ -6,8 +6,8 @@ export const Loader = () => {
 
             <Image 
             className="relative animate-wander"
-            width={40}
-            height={40}
+            width={32}
+            height={32}
             alt="S"
             src="/logo.png"
             />

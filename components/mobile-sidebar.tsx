@@ -16,9 +16,9 @@ const MobileSidebar = () => {
     if(!mounted) return null
     return (
         <Sheet>
-            <SheetTrigger>
+            <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
-                    <MenuIcon/>
+                <MenuIcon/>
                 </Button>
             </SheetTrigger>
             <SheetContent className="p-0" side="left">

@@ -65,6 +65,15 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        flicker: {
+          "0%, 100%": {
+            opacity: "0"
+          },
+          "50%": {
+            opacity: "1"
+          }
+
+        },
         wander: {
             '0%, 100%': {
               transform: 'translate(0%, 0%)',
@@ -105,7 +114,8 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "wander": "wander 3s infinite"
+        "wander": "wander 3s infinite",
+        "flicker": "flicker 0.5s infinite"
       },
     },
   },
