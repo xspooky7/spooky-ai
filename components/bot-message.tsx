@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from "react"
 import { BotAvatar } from "./bot-avatar"
+import { ReactMarkdown } from "react-markdown/lib/react-markdown"
 
 interface BotMessageProps {
     message: string
@@ -31,20 +32,26 @@ export const BotMessage = ({ message }: BotMessageProps) => {
       }, [])
 
     return (
-        <div key={message} className={"p-8 w-full flex items-start gap-x-8 rounded-lg bg-muted"}>
+        <div key={message} className={"lg:p-8 p-5 w-full flex lg:flex-row flex-col items-start gap-8 rounded-lg bg-muted"}>
             <BotAvatar/>
-            <p className="text-sm">
+                <ReactMarkdown
+                components={{
+                    pre: ({node, ...props}) => (
+                        <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
+                            <pre {...props}/>
+                        </div>
+                    ),
+                    code: ({ node, ...props }) => (
+                        <code className="bg-black/10 rounded-lg p-1" {...props}/>
+                    )
+
+                    
+                }} className="text-sm overflow-hidden leading-7">
                 {displayResponse}
-                {!completedTyping && (
-                    <svg
-                        viewBox="8 4 8 16"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="inline-block w-[1ch] mb-1 animate-flicker"
-                    >
-                        <rect x="10" y="6" width="4" height="12" fill="#000" />
-                    </svg>
-                )}
-            </p>
+                    </ReactMarkdown>
+                    
+                
+
         </div>
     )
 }
