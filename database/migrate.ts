@@ -2,7 +2,7 @@ import { drizzle, PostgresJsDatabase } from 'drizzle-orm/postgres-js'
 import { migrate } from 'drizzle-orm/postgres-js/migrator'
 import postgres from 'postgres'
 
-if(!process.env.DB_CONNECTION) {
+if(!process.env.DATABASE_URL) {
     throw new Error('DB_CONNECTION is missing!')
 }
 
