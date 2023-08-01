@@ -61,7 +61,7 @@ const ConversationPage = () => {
     <div>
       <Heading
         title="Conversation"
-        description="Advanced conversation model powered by ..."
+        description="Strike up a conversation or ask a question (GPT 3.5 turbo)"
         icon={MessageSquareIcon}
         iconColor="text-violet-500"
         bgColor="bg-violet-500/10"
