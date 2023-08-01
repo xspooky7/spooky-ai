@@ -82,7 +82,7 @@ const ConversationPage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Ask any question..."
+                        placeholder="In 50 words or less explain how gravity works"
                         {...field}
                       />
                     </FormControl>

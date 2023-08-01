@@ -65,7 +65,7 @@ const ImagePage = () => {
     <div>
       <Heading
         title="Image Generation"
-        description="Turn your promp into an image"
+        description="Turn your promp into images (Open AI/ DALL-E)"
         icon={ImageIcon}
         iconColor="text-pink-700"
         bgColor="bg-pink-700/10"
@@ -86,7 +86,7 @@ const ImagePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="A picture of a horse in Berlin"
+                        placeholder="A white siamese cat"
                         {...field}
                       />
                     </FormControl>

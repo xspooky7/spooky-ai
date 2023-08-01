@@ -53,7 +53,7 @@ const VideoPage = () => {
     <div>
       <Heading
         title="Video Generation"
-        description="Turn your prompt into a short video"
+        description="Turn your prompt into a short video (Replicate AI/ zeroscope-v2-xl)"
         icon={VideoIcon}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"
@@ -74,7 +74,7 @@ const VideoPage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="E.g. Clown fish swimming around a coral reef"
+                        placeholder="Clown fish swimming in a coral reef"
                         {...field}
                       />
                     </FormControl>
@@ -99,7 +99,7 @@ const VideoPage = () => {
               <Loader />
             </div>
           )}
-          {!video && !isLoading && <Empty label="No music generated yet." />}
+          {!video && !isLoading && <Empty label="No video generated yet." />}
           {video && (
             <video
               controls

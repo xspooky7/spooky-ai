@@ -53,7 +53,7 @@ const MusicPage = () => {
     <div>
       <Heading
         title="Music Generation"
-        description="Turn your prompt into a short music snippet"
+        description="Turn your prompt into a short music snippet (Replicate AI/ riffusion)"
         icon={MusicIcon}
         iconColor="text-emerald-500"
         bgColor="bg-emerald-500/10"

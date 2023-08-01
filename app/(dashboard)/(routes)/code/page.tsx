@@ -82,7 +82,7 @@ const CodePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="placeholder"
+                        placeholder="A react modal component which can be opened and closed"
                         {...field}
                       />
                     </FormControl>
@@ -108,7 +108,7 @@ const CodePage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <Empty label="No conversation started yet." />
+            <Empty label="No code generated yet." />
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map(message => {
