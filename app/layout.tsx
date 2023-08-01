@@ -9,8 +9,8 @@ import { CrispProvider } from '@/components/crisp-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Cny-Ai',
-  description: 'AI Toolkit',
+  title: 'Spooy AI',
+  description: 'All in one AI Toolkit',
 }
 
 export default function RootLayout({

@@ -62,29 +62,3 @@ export const getApiLimitCount = async () => {
 
   return userLimit.count
 }
-
-// TODO: REMOVE BEFOR PRODUCTION
-export const resetFreeTokens = async () => {
-  const { userId } = auth()
-
-  if (!userId) return
-
-  const response: UserApiLimit[] = await dbClient
-    .select()
-    .from(userApiLimit)
-    .where(eq(userApiLimit.userId, userId))
-
-  const userLimit = response[0]
-  if (userLimit) {
-    await dbClient
-      .update(userApiLimit)
-      .set({ count: 0 })
-      .where(eq(userApiLimit.userId, userId))
-  } else {
-    const newUserLimit: NewUserApiLimit = {
-      userId,
-      count: 1,
-    }
-    await dbClient.insert(userApiLimit).values(newUserLimit)
-  }
-}

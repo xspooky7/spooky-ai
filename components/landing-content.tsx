@@ -23,11 +23,11 @@ const testimonials = [
       'This app has changed my life, cannot imagine working without it!',
   },
   {
-    name: 'Mary',
-    avatar: 'M',
-    title: 'CFO',
+    name: 'Angelika',
+    avatar: 'A',
+    title: 'IT-Imposter',
     description:
-      'The best in class, definitely worth the premium subscription!',
+      'I usually am very clueless about technology but Spooky AI was enjoyable to use even for me',
   },
 ]
 
