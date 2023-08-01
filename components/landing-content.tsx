@@ -27,7 +27,7 @@ const testimonials = [
     avatar: 'A',
     title: 'IT-Imposter',
     description:
-      'I usually am very clueless about technology but Spooky AI was enjoyable to use even for me',
+      "I'm usually very clueless about technology but Spooky AI was enjoyable to use even for me",
   },
 ]
 

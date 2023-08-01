@@ -41,7 +41,7 @@ export const checkApiLimit = async () => {
     .where(eq(userApiLimit.userId, userId))
 
   const userLimit = response[0]
-  return !userLimit.count || userLimit.count < MAX_FREE_USAGE
+  return !userLimit?.count || userLimit?.count < MAX_FREE_USAGE
 }
 
 export const getApiLimitCount = async () => {
@@ -58,7 +58,7 @@ export const getApiLimitCount = async () => {
 
   const userLimit = response[0]
 
-  if (!userLimit.count) return 0
+  if (!userLimit?.count) return 0
 
   return userLimit.count
 }
