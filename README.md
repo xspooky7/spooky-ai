@@ -59,14 +59,10 @@ STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
-### Setup Prisma
+### Setup Drizzle
 
-Add MySQL Database (I used PlanetScale)
+Add Postgres Database (I used Neon)
 
-```shell
-npx prisma db push
-
-```
 
 ### Start the app
 
