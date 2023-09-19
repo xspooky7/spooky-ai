@@ -1,5 +1,7 @@
 # Spooky-AI | SaaS AI Platform with Next.js 13, React, Tailwind, Drizzle, Clerk
 
+[<img src="https://github.com/xspooky7/spooky-ai/blob/main/public/preview.png"/>](https://spooky-ai.vercel.app/)
+
 ### Tech Stack
 
 | [<img src="https://skillicons.dev/icons?i=nextjs" height="40px" width="40px"/>](https://nextjs.org/) |[<img src="https://skillicons.dev/icons?i=react" height="40px" width="40px"/>](https://react.dev/) | [<img src="https://skillicons.dev/icons?i=tailwind" height="40px" width="40px"/>](https://tailwindcss.com/) | [<img src="https://avatars.githubusercontent.com/u/108468352?s=280&v=4" height="40px"/>](https://orm.drizzle.team/) | [<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjpGukzh9ZfzARbsH-wb6lnhnsS3_B6L-0DiABOCWCSA&s" height="40px"/>](https://clerk.com/) | [<img src="https://skillicons.dev/icons?i=postgres" height="40px" width="40px"/>](https://www.postgresql.org/) |
